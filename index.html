@@ -1,1 +1,55 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Market Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1><i class="fa-solid fa-arrow-up"></i>Stock Market Dashboard<i class="fa-solid fa-arrow-down"></i></h1>
+      <div class="input-container">
+        <label for="stock-symbol">Enter stock symbol:</label>
+        <input type="text" id="stock-symbol" name="stock-symbol">
+        <button id="add-stock">Add</button>
+      </div>
+      <div class="timeframe-container">
+        <button id="intraday">Intraday</button>
+        <button id="weekly">Weekly</button>
+        <button id="daily">Daily</button>
+        <button id="monthly">Monthly</button>
+      </div>
+    </div>
+    <div class="watchlist">
+      <h2>Watchlist</h2>
+      <div class="stock-card">
+        <div class="card-header">
+          <h3>Stock Name</h3>
+          <button class="delete-button">Delete</button>
+        </div>
+        <div class="card-body">
+          <p>Stock Price</p>
+          <p>Other Stock Data</p>
+        </div>
+      </div>
+      <div class="stock-card">
+        <div class="card-header">
+          <h3>Stock Name</h3>
+          <button class="delete-button">Delete</button>
+        </div>
+        <div class="card-body">
+          <p>Stock Price</p>
+          <p>Other Stock Data</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Stock Name - Timeframe</h2>
+        <p>Stock Data</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
